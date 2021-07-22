@@ -82,6 +82,9 @@ bounce = 0.6
 bounce = 0.6
 
 [node name="Testing_Area" type="Spatial"]
+__meta__ = {
+"_editor_description_": "fdasdfasDf"
+}
 
 [node name="Box" type="Spatial" parent="."]
 
