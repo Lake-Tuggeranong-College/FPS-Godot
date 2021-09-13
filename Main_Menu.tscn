@@ -64,9 +64,13 @@ font_data = ExtResource( 3 )
 anchor_right = 1.0
 anchor_bottom = 1.0
 script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 testing_area_scene = "res://Testing_Area.tscn"
 space_level_scene = "res://assets/Space_Level_Objects/Space_Level.tscn"
 ruins_level_scene = "res://assets/Ruin_Level_Objects/Ruins_Level.tscn"
+doom_level_scene = "res://Doom_Clone.tscn"
 
 [node name="Background_Animation" type="Spatial" parent="."]
 
@@ -75,6 +79,7 @@ environment = SubResource( 2 )
 
 [node name="Main_Menu_Camera" type="Camera" parent="Background_Animation"]
 transform = Transform( 1, -1.74846e-07, 1.74846e-07, 1.74846e-07, 1, -1.74846e-07, -1.74846e-07, 1.74846e-07, 1, 0, 0, 0 )
+current = true
 
 [node name="Animation_Player" type="AnimationPlayer" parent="Background_Animation"]
 autoplay = "Background_Animation"
@@ -113,6 +118,9 @@ margin_right = 155.0
 margin_bottom = -200.0
 custom_fonts/font = SubResource( 5 )
 text = "Start game"
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="Button_Open_Godot" type="Button" parent="Start_Menu"]
 anchor_left = 0.5
@@ -182,16 +190,45 @@ margin_right = 155.0
 margin_bottom = -20.0
 custom_fonts/font = SubResource( 5 )
 text = "Back"
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="Button_Level_Testing_Area" type="Button" parent="Level_Select_Menu"]
 anchor_left = 0.5
 anchor_right = 0.5
-margin_left = -70.0
-margin_top = 113.0
-margin_right = 70.0
-margin_bottom = 253.0
+margin_left = -144.246
+margin_top = 109.464
+margin_right = -4.24619
+margin_bottom = 249.464
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="Icon" type="TextureRect" parent="Level_Select_Menu/Button_Level_Testing_Area"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -60.0
+margin_top = -60.0
+margin_right = 60.0
+margin_bottom = 60.0
+texture = ExtResource( 4 )
+expand = true
+
+[node name="Button_Doom_Level" type="Button" parent="Level_Select_Menu"]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -63.636
+margin_top = 487.766
+margin_right = 76.364
+margin_bottom = 627.766
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Icon" type="TextureRect" parent="Level_Select_Menu/Button_Doom_Level"]
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
@@ -206,10 +243,10 @@ expand = true
 [node name="Button_Level_Space" type="Button" parent="Level_Select_Menu"]
 anchor_left = 0.5
 anchor_right = 0.5
-margin_left = -70.0
-margin_top = 275.0
-margin_right = 70.0
-margin_bottom = 415.0
+margin_left = 14.1457
+margin_top = 109.537
+margin_right = 154.146
+margin_bottom = 249.537
 
 [node name="Icon" type="TextureRect" parent="Level_Select_Menu/Button_Level_Space"]
 anchor_left = 0.5
@@ -226,10 +263,10 @@ expand = true
 [node name="Button_Level_Ruins" type="Button" parent="Level_Select_Menu"]
 anchor_left = 0.5
 anchor_right = 0.5
-margin_left = -70.0
-margin_top = 433.0
-margin_right = 70.0
-margin_bottom = 573.0
+margin_left = -60.8076
+margin_top = 270.366
+margin_right = 79.1924
+margin_bottom = 410.366
 
 [node name="Icon" type="TextureRect" parent="Level_Select_Menu/Button_Level_Ruins"]
 anchor_left = 0.5
