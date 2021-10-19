@@ -108,6 +108,11 @@ const OBJECT_GRAB_RAY_DISTANCE = 10
 # We need this for making sounds, and getting a respawn point
 var globals
 
+func wall_run():
+	if Input.is_action_pressed("movement_jump"):
+		if Input.is_action_pressed("movement_forward"):
+			if is_on_wall():
+				vel.y = 0
 
 func _ready():
 	
@@ -165,6 +170,8 @@ func _ready():
 
 
 func _physics_process(delta):
+	
+	wall_run()
 	
 	# If we are dead, we do not want to process anything that moves the player, or takes player input.
 	#So we check to make sure we are not dead before calling any of those functions
@@ -274,6 +281,9 @@ func process_input(delta):
 		if Input.is_action_just_pressed("movement_jump"):
 			vel.y = JUMP_SPEED
 	# ----------------------------------
+	
+#	if not is_on_floor():
+#		vel.y -= GRAVITY
 	
 	# ----------------------------------
 	# Changing weapons.

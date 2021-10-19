@@ -1,4 +1,4 @@
-[gd_scene load_steps=28 format=2]
+[gd_scene load_steps=29 format=2]
 
 [ext_resource path="res://Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://RigidBody_hit_test.gd" type="Script" id=2]
@@ -16,6 +16,7 @@ size = Vector2( 80, 80 )
 
 [sub_resource type="SpatialMaterial" id=3]
 albedo_texture = ExtResource( 7 )
+uv1_scale = Vector3( 10, 10, 10 )
 
 [sub_resource type="BoxShape" id=4]
 extents = Vector3( 40, 0.1, 40 )
@@ -23,6 +24,12 @@ extents = Vector3( 40, 0.1, 40 )
 [sub_resource type="SpatialMaterial" id=5]
 albedo_color = Color( 0.609375, 0.609375, 0.609375, 1 )
 albedo_texture = ExtResource( 8 )
+uv1_scale = Vector3( 8, 8, 8 )
+
+[sub_resource type="SpatialMaterial" id=20]
+albedo_texture = ExtResource( 8 )
+uv1_scale = Vector3( 8, 8, 8 )
+uv2_scale = Vector3( 0.5, 0.5, 0.5 )
 
 [sub_resource type="SphereMesh" id=6]
 radius = 3.0
@@ -145,7 +152,7 @@ shape = SubResource( 4 )
 transform = Transform( -1.62921e-07, -1, 0.000345306, 0, 0.000345306, 1, -1, 1.62921e-07, -5.62574e-11, 38.2511, 37.0752, 0.0846462 )
 cast_shadow = 2
 mesh = SubResource( 1 )
-material/0 = SubResource( 5 )
+material/0 = SubResource( 20 )
 
 [node name="StaticBody" type="StaticBody" parent="Box/Wall_2"]
 

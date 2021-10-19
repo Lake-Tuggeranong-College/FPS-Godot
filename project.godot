@@ -202,6 +202,10 @@ change_grenade={
  ]
 }
 
+[physics]
+
+common/physics_fps=240
+
 [rendering]
 
 quality/filters/msaa=2
