@@ -617,6 +617,8 @@ func process_reloading(delta):
 
 
 func process_UI(delta):
+	# Update the player Score
+	$"HUD/Panel-Score/Score".text = str(Globals.playerScore)
 	# UI processing
 	
 	# Set the HUD text

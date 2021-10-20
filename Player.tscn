@@ -4252,6 +4252,32 @@ text = "Health: 100
 Ammo: 000/000
 "
 
+[node name="Panel-Score" type="Panel" parent="HUD"]
+modulate = Color( 1, 1, 1, 0.705882 )
+margin_left = 914.0
+margin_top = 548.0
+margin_right = 1284.0
+margin_bottom = 708.0
+custom_styles/panel = SubResource( 23 )
+
+[node name="Panel_border" type="Panel" parent="HUD/Panel-Score"]
+modulate = Color( 0.679688, 0.679688, 0.679688, 1 )
+show_behind_parent = true
+margin_top = -10.0
+margin_right = 380.0
+margin_bottom = 160.0
+custom_styles/panel = SubResource( 23 )
+
+[node name="Score" type="Label" parent="HUD/Panel-Score"]
+self_modulate = Color( 1, 1, 1, 0.705882 )
+margin_left = 10.0
+margin_top = 20.0
+margin_right = 380.0
+margin_bottom = 109.0
+custom_fonts/font = SubResource( 24 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "0"
+
 [node name="Death_Screen" type="ColorRect" parent="HUD"]
 visible = false
 margin_right = 1280.0
