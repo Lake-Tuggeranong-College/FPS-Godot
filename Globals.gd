@@ -43,9 +43,9 @@ var playerScore = 0
 #		gun_semi_auto_rifle_cock_02,
 #		gun_submachine_auto_shot_00_automatic_preview_01
 var audio_clips = {
-	"pistol_shot":null, #preload("res://path_to_your_audio_here!")
-	"rifle_shot":null, #preload("res://path_to_your_audio_here!")
-	"gun_cock":null, #preload("res://path_to_your_audio_here!")
+	"pistol_shot":preload("res://desert-eagle.wav"),
+	"rifle_shot": preload("res://energy-rifle-shot.wav"),
+	"gun_cock": preload("res://pistol-cock.wav"),
 }
 
 # The simple audio player scene
