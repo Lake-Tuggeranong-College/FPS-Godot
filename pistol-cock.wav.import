@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/pistol-cock.wav-d31354366f0c3ea8aa2ac88dd40e1a6a.sample"
+
+[deps]
+
+source_file="res://pistol-cock.wav"
+dest_files=[ "res://.import/pistol-cock.wav-d31354366f0c3ea8aa2ac88dd40e1a6a.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

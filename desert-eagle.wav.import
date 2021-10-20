@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/desert-eagle.wav-15bf7a3b77db6ff4691ee9417e4ed98e.sample"
+
+[deps]
+
+source_file="res://desert-eagle.wav"
+dest_files=[ "res://.import/desert-eagle.wav-15bf7a3b77db6ff4691ee9417e4ed98e.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0
